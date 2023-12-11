@@ -1,3 +1,3 @@
-text=input()
+text = input()
 for i in text:
     print(i, end=",")

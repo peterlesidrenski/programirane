@@ -1,8 +1,9 @@
+number_is_not_prime = False
 n = int(input())
-for number in range (1, n + 1):  
-    if number > 1:  
-        for i in range(2, number):  
-            if number % i == 0:  
-                break  
-        else:  
-            print(number)  
+for i in range(2, n):
+    if n % i == 0:
+        number_is_not_prime = True
+if number_is_not_prime:
+    print(f"{n}is not prime")
+else:
+    print(f"{n}is prime")
